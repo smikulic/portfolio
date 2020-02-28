@@ -1,5 +1,5 @@
 import React from 'react';
-// import logo from './logo.svg';
+import scroogevaultShowcase from './images/scroogevault-showcase.png';
 import './App.css';
 
 // EBDE37
@@ -80,6 +80,30 @@ function App() {
             <div className="person">
               <img src="https://getivor.com/images/ivor.jpg" className="profile-picture" alt="Ivor Reic" />
               <div className="name">Ivor Reic, <br />Owner at Codetree.co</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="showcase" className="section section-showcase">
+          <h2>Showcase project</h2>
+          <div className="project">
+            <a className="project-image" href="https://www.scroogevault.co/" target="_blank" rel="noopener noreferrer">
+              <img src={scroogevaultShowcase} alt="ScroogeVault" />
+              {/* <img src="http://scroogevault.co/static/c05a002351f60a9ad6203c9f6c62b695.png" alt="ScroogeVault" /> */}
+            </a>
+            <div className="project-description">
+              <h3>ScroogeVault</h3>
+              <p className="quick-description">Savings goals tracking app</p>
+              <p>
+                I wanted to build real-world CRUD app and showcase my skills in developing product and setting up infrastructure from ground zero.
+                Client side has scalable React architecture with Mobx state management and Webpack/CircleCI infrastructure. API is built on Ruby on Rails with
+                REST style. Release process is a "one button deploy" via Github!
+              
+              </p>
+              <div>
+                <button>Try it yourself</button>
+                <button>View the code</button>
+              </div>
             </div>
           </div>
         </div>
