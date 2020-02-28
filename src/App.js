@@ -8,6 +8,7 @@ import './App.css';
 // 515769
 // 1E2233
 // 24283B
+// F8DD74
 
 function App() {
   return (
@@ -18,12 +19,38 @@ function App() {
       
       <main className="container">
         <div className="section section-intro">
-          <div>
-            <img src="https://smikulic.me/profile.jpg" className="profile-picture" alt="Sinisa Mikulic" />
+          <div className="profile-picture">
+            <img src="https://smikulic.me/profile.jpg" alt="Sinisa Mikulic" />
           </div>
-          <div>
+          <div className="profile-content">
             <h1 className="headline">I'm a proven web development expert specialized in UI & UX.</h1>
             <h3 className="subheadline">Whether you're an early stage startup or an established company - I will provide you with technical and business expertise you need to succeed.</h3>
+            <div className="technologies">
+              <div className="tech">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" />
+                <span>JavaScript</span>
+              </div>
+              <div className="tech">
+                <img src="https://cdn.worldvectorlogo.com/logos/typescript.svg" alt="TypeScript" />
+                <span>TypeScript</span>
+              </div>
+              <div className="tech">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K" alt="React" />
+                <span>React</span>
+              </div>
+              <div className="tech">
+                <img src="https://graphql.org/img/logo.svg" alt="GraphQL" />
+                <span>GraphQL</span>
+              </div>
+              <div className="tech">
+                <img src="https://nodejs.org/static/images/logo.svg" alt="Node" />
+                <span>Node.js</span>
+              </div>
+              <div className="tech">
+                <img src="https://avatars1.githubusercontent.com/u/31557565?s=200&v=4" alt="Emotion" />
+                <span>Styled Comp</span>
+              </div>
+            </div>
           </div>
         </div>
         
@@ -37,7 +64,7 @@ function App() {
             </p>
             <div className="person">
               <img src="https://media-exp1.licdn.com/dms/image/C4D03AQGMSpvbNlYb4w/profile-displayphoto-shrink_200_200/0?e=1588204800&v=beta&t=LDvxAbgpFNpCAkuCC3FqrrGJBJVui7mzd-QKdvOSAU0" className="profile-picture" alt="Ingmar Krusch" />
-              <div className="name">- Ingmar Krusch, VP Engineering, solarisBank</div>
+              <div className="name">Ingmar Krusch, <br />VP Engineering at solarisBank</div>
             </div>
           </div>
           <div className="testimonial">
@@ -52,46 +79,8 @@ function App() {
             </p>
             <div className="person">
               <img src="https://getivor.com/images/ivor.jpg" className="profile-picture" alt="Ivor Reic" />
-              <div className="name">- Ivor Reic, Owner at Codetree.co</div>
+              <div className="name">Ivor Reic, <br />Owner at Codetree.co</div>
             </div>
-          </div>
-        </div>
-
-        <div className="section section-intro">
-          <div>
-            <img src="https://smikulic.me/profile.jpg" className="profile-picture" alt="Sinisa Mikulic" />
-          </div>
-          <div>
-            <h1 className="headline">I'm a proven web development expert specialized in frontend.</h1>
-            <h3 className="subheadline">If you are a early stage startup or established company I can help you deliver your product so that you can gain interest from investors, bring value to your users and meet their business goals.</h3>
-          </div>
-        </div>
-
-        <div className="section section-intro">
-          <div>
-            <img src="https://smikulic.me/profile.jpg" className="profile-picture" alt="Sinisa Mikulic" />
-          </div>
-          <div>
-            <h1 className="headline">I'm a proven web development expert specialized in frontend.</h1>
-            <h3 className="subheadline">If you are a early stage startup or established company I can help you deliver your product so that you can gain interest from investors, bring value to your users and meet their business goals.</h3>
-          </div>
-        </div>
-        <div className="section section-intro">
-          <div>
-            <img src="https://smikulic.me/profile.jpg" className="profile-picture" alt="Sinisa Mikulic" />
-          </div>
-          <div>
-            <h1 className="headline">I'm a proven web development expert specialized in frontend.</h1>
-            <h3 className="subheadline">If you are a early stage startup or established company I can help you deliver your product so that you can gain interest from investors, bring value to your users and meet their business goals.</h3>
-          </div>
-        </div>
-        <div className="section section-intro">
-          <div>
-            <img src="https://smikulic.me/profile.jpg" className="profile-picture" alt="Sinisa Mikulic" />
-          </div>
-          <div>
-            <h1 className="headline">I'm a proven web development expert specialized in frontend.</h1>
-            <h3 className="subheadline">If you are a early stage startup or established company I can help you deliver your product so that you can gain interest from investors, bring value to your users and meet their business goals.</h3>
           </div>
         </div>
 
