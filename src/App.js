@@ -1,13 +1,12 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
-import {
-  faGithubAlt,
-  faInstagram,
-  faLinkedinIn,
-} from '@fortawesome/free-brands-svg-icons'
+import { faClock, faHandshake } from '@fortawesome/free-regular-svg-icons'
+import { faBullhorn, faBullseye } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import Navigation from './components/navigation/navigation'
-// import scroogevaultShowcase from './images/scroogevault-showcase.png'
+import SocialLinks from './components/social-links/social-links'
+import Footer from './components/footer/footer'
+import scroogevaultShowcase from './images/scroogevault-showcase.png'
 import './App.css'
 
 // EBDE37
@@ -31,20 +30,7 @@ function App() {
           <div className="profile">
             <div className="profile-picture">
               <img src="https://smikulic.me/profile.jpg" alt="Sinisa Mikulic" />
-              <div className="social">
-                <a href="mailto:sinisa@codewell.studio" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faEnvelope} />
-                </a>
-                <a href="https://github.com/smikulic/" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faGithubAlt} />
-                </a>
-                <a href="https://www.linkedin.com/in/sinisamikulic/" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faLinkedinIn} />
-                </a>
-                <a href="https://www.instagram.com/sinisamikulic/" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faInstagram} />
-                </a>
-              </div>
+              <SocialLinks />
             </div>
             <div className="profile-content">
               <h1 className="headline">I'm a proven web development expert specialized in UI & UX.</h1>
@@ -118,41 +104,67 @@ function App() {
           <h2>Showcase project</h2>
           <div className="project">
             <a className="project-image" href="https://www.scroogevault.co/" target="_blank" rel="noopener noreferrer">
-              {/* <img src={scroogevaultShowcase} alt="ScroogeVault" /> */}
-              <img src="http://scroogevault.co/static/c05a002351f60a9ad6203c9f6c62b695.png" alt="ScroogeVault" />
+              <img src={scroogevaultShowcase} alt="ScroogeVault" />
+              {/* <img src="http://scroogevault.co/static/c05a002351f60a9ad6203c9f6c62b695.png" alt="ScroogeVault" /> */}
             </a>
             <div className="project-description">
               <h3>ScroogeVault</h3>
               <p className="quick-description">Savings goals tracking app</p>
               <p>
                 I wanted to build real-world CRUD app and showcase my skills in setting up product and infrastructure from ground zero.
-                <br /><br />Client side has scalable React/Mobx architecture with Webpack and CircleCI infrastructure. API is built on Ruby on Rails with
-                REST style. Release process is a "one button deploy" via Github!
-              
+                <br /><br />Client side has scalable React/Mobx architecture with Webpack and CircleCI infrastructure. RESTful API is built on Rails and 
+                release process is a "one button deploy" via Github!
               </p>
               <div>
-                <button>Try it yourself</button>
-                <button>View the code</button>
+                <a href="https://www.scroogevault.co/" target="_blank" rel="noopener noreferrer">
+                  <button className="primary">Try it yourself</button>
+                </a>
+                <button className="secondary"><FontAwesomeIcon icon={faGithub} /> View the code</button>
               </div>
             </div>
           </div>
         </div>
 
+        <div id="how-i-work" className="section section-how-i-work">
+          <h2>How I work</h2>
+          <h4><FontAwesomeIcon icon={faBullhorn} /> Effective and transparent communication</h4>
+          <p>
+            Many developers fall into trap of just writing code. But what they often forget is that many problems can be 
+            solved by prompt communication and asking the right questions early on.
+            Throughout my experience I learned how to shave off weeks and even months of unnecessary work with only transparent and effective communication.
+          </p>
+          <hr/>
+          <h4><FontAwesomeIcon icon={faBullseye} /> Pragmatic with business goals in mind</h4>
+          <p>
+            My goal is to help you build a successful business, and every online business needs to move fast while ensuring code quality.
+            I can quickly grok the perfect balance and develop your product with speed and stability.
+          </p>
+          <hr/>
+          <h4><FontAwesomeIcon icon={faClock} /> I won't waste your time</h4>
+          <p>
+            I am a self-managed contributor who can mold into your processes very quickly, so I won't need much hand holding. I know when to ask for permission and when to 
+            make decisions independently.
+          </p>
+          <hr/>
+          <h4><FontAwesomeIcon icon={faHandshake} /> Flexible and risk free engagement</h4>
+          <p>
+            Hiring new talent is a great challenge and even bigger risk. I prefer to have happy clients who choose to work with me on a daily basis.
+            In order to do that I prefer signing flexible contracts which you can terminate at any time. Not that you will need to 
+            <span className="smiley" role="img" aria-label="smiley">🙂</span>
+          </p>
+        </div>
+
+        <div id="contact" className="section section-contact">
+          <h2>Get in touch</h2>
+          <p>
+            Tell me more about your project and send me an email at &nbsp;
+            <a href="mailto:sinisa@codewell.studio">sinisa@codewell.studio</a>
+          </p>
+        </div>
+
+        <Footer />
+
       </main>
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
     </div>
   );
 }
