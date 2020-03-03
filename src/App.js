@@ -29,7 +29,7 @@ function App() {
     <div className="App">
       <main className="container">
 
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Navigation />
         
         <Switch>
