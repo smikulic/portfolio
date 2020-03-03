@@ -1,0 +1,33 @@
+.section.section-work .project {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.section.section-work .project-image,
+.section.section-work .project-description {
+  width: 70%;
+  padding: 15px 0;
+  text-align: center;
+}
+.section.section-work .project-image img {
+  width: 100%;
+}
+.section.section-work .project-description {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.section.section-work .project-description button {
+  margin-right: 15px;
+}
+
+.section.section-work .project-description p {
+  font-weight: 300;
+  font-size: 0.85rem;
+}
+@media(max-width: 936px) {
+  .section.section-work .project-image,
+  .section.section-work .project-description {
+    width: 100%;
+  }
+}
