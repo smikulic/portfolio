@@ -1,5 +1,5 @@
 import React from 'react'
-import scroogevaultShowcase from '../../images/scroogevault-showcase.png'
+import scroogevaultShowcase from '../../images/scroogevault-showcase-opt.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import './section-showcase.css'

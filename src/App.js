@@ -6,8 +6,8 @@ import SectionTestimonials from './sections/section-testimonials/section-testimo
 import SectionShowcase from './sections/section-showcase/section-showcase'
 import SectionHowIWork from './sections/section-how-i-work/section-how-i-work'
 import SectionContact from './sections/section-contact/section-contact'
-import './App.css'
 import SectionWork from './sections/section-work/section-work'
+import './App.css'
 
 // EBDE37
 // 3A3A33
