@@ -1,0 +1,9 @@
+.section.section-how-i-work h4 svg {
+  color: salmon;
+}
+.section.section-how-i-work .smiley {
+  position: absolute;
+  margin-top: -3px;
+  margin-left: 7px;
+  font-size: 1.25rem;
+}

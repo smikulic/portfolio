@@ -11,3 +11,14 @@
   text-decoration: none;
   color: #24283B;
 }
+.navigation a:hover {
+  color: rgba(30, 34, 51, 0.2);
+}
+@media(max-width: 936px) {
+  .navigation .items {
+    justify-content: center;
+  }
+  .navigation .items .item {
+    margin: 0 15px;
+  }
+}

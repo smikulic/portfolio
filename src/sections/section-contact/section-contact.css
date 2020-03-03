@@ -1,0 +1,11 @@
+.section.section-contact p {
+  padding-top: 15px;
+  text-align: center;
+}
+.section.section-contact a {
+  text-decoration: none;
+  padding-bottom: 6px;
+  font-weight: 500;
+  color: #24283B;
+  border-bottom: 3px solid rgba(30, 34, 51, 0.2);
+}
