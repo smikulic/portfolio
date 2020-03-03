@@ -29,7 +29,7 @@ function App() {
     <div className="App">
       <main className="container">
 
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router basename={process.env.NODE_ENV === 'development' ? '/' : process.env.PUBLIC_URL}>
         <Navigation />
         
         <Switch>
