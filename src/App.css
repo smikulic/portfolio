@@ -68,14 +68,16 @@ hr {
 .section-showcase,
 .section-work,
 .section-contact,
-.section-how-i-work {
+.section-how-i-work,
+.section-about {
   flex-direction: column;
 }
 
 .section-work h2,
 .section-contact h2,
 .section-showcase h2,
-.section-how-i-work h2 {
+.section-how-i-work h2,
+.section-about h2 {
   text-align: center;
   margin-bottom: 45px;
 }
@@ -83,7 +85,8 @@ hr {
   .section-work h2,
   .section-contact h2,
   .section-showcase h2,
-  .section-how-i-work h2 {
+  .section-how-i-work h2,
+  .section-about h2 {
     font-size: 1.25rem;
     margin-bottom: 15px;
   }
