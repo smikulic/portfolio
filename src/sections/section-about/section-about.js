@@ -4,7 +4,7 @@ import './section-about.css'
 
 function SectionAbout() {
   return (
-    <div className="section section-about">
+    <div className="section section-page">
       <h1>Hi <span className="wave" role="img" aria-label="wave">👋</span></h1>
       <p>
         My name is Sinisa. After my degree in IT, I began developing web applications for local businesses. 

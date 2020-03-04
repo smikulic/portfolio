@@ -69,7 +69,7 @@ hr {
 .section-work,
 .section-contact,
 .section-how-i-work,
-.section-about {
+.section-page {
   flex-direction: column;
 }
 
@@ -77,7 +77,7 @@ hr {
 .section-contact h2,
 .section-showcase h2,
 .section-how-i-work h2,
-.section-about h2 {
+.section-page h2 {
   text-align: center;
   margin-bottom: 45px;
 }
@@ -86,8 +86,36 @@ hr {
   .section-contact h2,
   .section-showcase h2,
   .section-how-i-work h2,
-  .section-about h2 {
+  .section-page h2 {
     font-size: 1.25rem;
     margin-bottom: 15px;
   }
+}
+
+.section.section-page {
+  padding: 30px 60px;
+}
+.section.section-page h1 {
+  padding: 30px 0;
+}
+.section.section-page p {
+  padding: 15px 0;
+}
+.section.section-page p:last-child {
+  padding-bottom: 45px;
+}
+.section.section-page p a {
+  color: salmon;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 2px solid transparent;
+}
+.section.section-page p a:hover {
+  padding-bottom: 2px;
+  border-bottom: 2px solid salmon;
+}
+.section-page .prominent {
+  font-weight: 100;
+  letter-spacing: -1px;
+  font-size: 1.25rem;
 }

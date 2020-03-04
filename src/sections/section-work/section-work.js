@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-regular-svg-icons'
 import creditKarmaProjectImg from '../../images/credit-karma-project.webp'
@@ -22,9 +23,9 @@ function SectionWork() {
             It offers free credit score reports, credit cards, personal loans shopping, tax filing and other financial products.
           </p>
           <div>
-            <a href="https://codewell.studio/marketplace-case-study" target="_blank" rel="noopener noreferrer">
+            <Link to="/credit-karma-case-study">
               <button className="primary">Case study</button>
-            </a>
+            </Link>
             <a href="https://www.creditkarma.com/" target="_blank" rel="noopener noreferrer">
               <button className="secondary"><FontAwesomeIcon icon={faEye} /> Visit website</button>
             </a>

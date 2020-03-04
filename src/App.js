@@ -13,6 +13,7 @@ import SectionHowIWork from './sections/section-how-i-work/section-how-i-work'
 import SectionContact from './sections/section-contact/section-contact'
 import SectionWork from './sections/section-work/section-work'
 import SectionAbout from './sections/section-about/section-about'
+import SectionCreditKarma from './sections/section-credit-karma/section-credit-karma'
 import './App.css'
 
 // EBDE37
@@ -43,6 +44,9 @@ function App() {
           </Route>
           <Route path="/about">
             <SectionAbout />
+          </Route>
+          <Route path="/credit-karma-case-study">
+            <SectionCreditKarma />
           </Route>
         </Switch>
         
