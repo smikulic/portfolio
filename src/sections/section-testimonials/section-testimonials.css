@@ -12,6 +12,9 @@
   line-height: 1.3;
 }
 .section.section-testimonials .testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 50%;
   padding: 15px 0;
 }

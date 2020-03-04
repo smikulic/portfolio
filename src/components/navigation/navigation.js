@@ -9,10 +9,8 @@ function Navigation() {
       <div className="items">
         <Link to="/" className="item">Home</Link>
         <HashLink to="/#work" className="item">Work</HashLink>
-        {/* <a href="/#work" className="item">Work</a> */}
         <Link to="/about" className="item">About</Link>
         <HashLink to="/#contact" className="item">Get in touch</HashLink>
-        {/* <a href="/#contact" className="item">Get in touch</a> */}
       </div>
     </nav>
   );

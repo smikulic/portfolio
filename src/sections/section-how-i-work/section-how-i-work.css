@@ -1,4 +1,11 @@
+.section.section-how-i-work {
+  padding: 30px 60px;
+}
+.section.section-how-i-work h4 {
+  padding-bottom: 5px;
+}
 .section.section-how-i-work h4 svg {
+  padding-right: 5px;
   color: salmon;
 }
 .section.section-how-i-work .smiley {
