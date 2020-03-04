@@ -1,8 +1,5 @@
-.section.section-contact {
-  padding-bottom: 60px;
-}
 .section.section-contact p {
-  padding-top: 15px;
+  padding: 15px 45px 45px 45px;
   text-align: center;
 }
 .section.section-contact a {
