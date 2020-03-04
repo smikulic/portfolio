@@ -119,3 +119,11 @@ hr {
   letter-spacing: -1px;
   font-size: 1.25rem;
 }
+.section-page .tech span {
+  padding: 5px 10px;
+  margin-right: 5px;
+  font-size: 0.8rem;
+  color: #FFF8EF;
+  background-color: salmon;
+  border-radius: 5px;
+}

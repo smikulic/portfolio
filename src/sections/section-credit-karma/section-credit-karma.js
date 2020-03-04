@@ -1,11 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import './section-credit-karma.css'
 
 function SectionCreditKarma() {
   return (
     <div className="section section-page">
       <h1>Credit Karma</h1>
+      <div className="tech">
+        <span>React</span>
+        <span>Apollo/GraphQL</span>
+        <span>Node.js</span>
+        <span>Webpack</span>
+        <span>CircleCI</span>
+      </div>
       <p>
         Credit Karma is an American multinational 
         <b>personal finance company with over 88 million members, with valuation over 4 billion</b>. 

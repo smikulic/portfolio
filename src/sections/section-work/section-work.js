@@ -46,9 +46,9 @@ function SectionWork() {
             scale up a team, and raise almost €100m in funding rounds with Arvato, BBVA, Visa, Lakestar and other.
           </p>
           <div>
-            <a href="https://codewell.studio/solarisbank-case-study" target="_blank" rel="noopener noreferrer">
+            <Link to="/solarisbank-case-study">
               <button className="primary">Case study</button>
-            </a>
+            </Link>
             <a href="https://www.solarisbank.com/en/" target="_blank" rel="noopener noreferrer">
               <button className="secondary"><FontAwesomeIcon icon={faEye} /> Visit website</button>
             </a>
@@ -69,9 +69,9 @@ function SectionWork() {
             We had been searching for a simple and well-designed movie-browsing interface, yet we couldn't find one. Therefore, we decided to create one ourselves.
           </p>
           <div>
-            <a href="https://codewell.studio/movieo-case-study/" target="_blank" rel="noopener noreferrer">
+            <Link to="/movieo-case-study">
               <button className="primary">Case study</button>
-            </a>
+            </Link>
             <a href="https://movieo.me/" target="_blank" rel="noopener noreferrer">
               <button className="secondary"><FontAwesomeIcon icon={faEye} /> Visit website</button>
             </a>
