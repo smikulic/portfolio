@@ -12,3 +12,8 @@
 .section.section-contact a:hover {
   border-bottom: 3px solid salmon;
 }
+@media(max-width: 656px) {
+  .section.section-contact p {
+    padding: 15px 30px 30px 30px;
+  }
+}
