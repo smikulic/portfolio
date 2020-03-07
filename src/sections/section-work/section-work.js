@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-regular-svg-icons'
 import creditKarmaProjectImg from '../../images/credit-karma-project.webp'
+import creditKarmaProjectImgJpg from '../../images/credit-karma-project.jpg'
 import solarisbankProjectImg from '../../images/solarisbank-project.webp'
+import solarisbankProjectImgJpg from '../../images/solarisbank-project.jpg'
 import movieoProjectImg from '../../images/movieo-project.webp'
+import movieoProjectImgJpg from '../../images/movieo-project.jpg'
 import './section-work.css'
 
 function SectionWork() {
@@ -14,7 +17,10 @@ function SectionWork() {
 
       <div className="project">
         <a className="project-image" href="https://www.creditkarma.com/" target="_blank" rel="noopener noreferrer">
-          <img src={creditKarmaProjectImg} alt="Credit Karma" />
+          <picture>
+            <source srcSet={creditKarmaProjectImg} type="image/webp" alt="Credit Karma" />
+            <img src={creditKarmaProjectImgJpg} alt="Credit Karma" />
+          </picture>
         </a>
         <div className="project-description">
           <h3>Credit Karma</h3>
@@ -37,7 +43,10 @@ function SectionWork() {
 
       <div className="project">
         <a className="project-image" href="https://www.solarisbank.com/en/" target="_blank" rel="noopener noreferrer">
-          <img src={solarisbankProjectImg} alt="solarisBank" />
+          <picture>
+            <source srcSet={solarisbankProjectImg} type="image/webp" alt="solarisBank" />
+            <img src={solarisbankProjectImgJpg} alt="solarisBank" />
+          </picture>
         </a>
         <div className="project-description">
           <h3>solarisBank</h3>
@@ -60,7 +69,10 @@ function SectionWork() {
       
       <div className="project">
         <a className="project-image" href="https://movieo.me/" target="_blank" rel="noopener noreferrer">
-          <img src={movieoProjectImg} alt="Movieo" />
+          <picture>
+            <source srcSet={movieoProjectImg} type="image/webp" alt="Movieo" />
+            <img src={movieoProjectImgJpg} alt="Movieo" />
+          </picture>
         </a>
         <div className="project-description">
           <h3>Movieo</h3>

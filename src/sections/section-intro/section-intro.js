@@ -1,5 +1,6 @@
 import React from 'react'
 import profileImg from '../../images/profile.webp'
+import profileImgJpg from '../../images/profile.jpg'
 import SocialLinks from '../../components/social-links/social-links'
 import './section-intro.css'
 
@@ -8,7 +9,10 @@ function SectionIntro() {
     <div className="section section-intro">
       <div className="profile">
         <div className="profile-picture">
-          <img src={profileImg} alt="Sinisa Mikulic" />
+          <picture>
+            <source srcSet={profileImg} type="image/webp" alt="Sinisa Mikulic" />
+            <img src={profileImgJpg} alt="Sinisa Mikulic" />
+          </picture>
           <SocialLinks />
         </div>
         <div className="profile-content">

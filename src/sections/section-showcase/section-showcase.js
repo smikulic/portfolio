@@ -1,5 +1,6 @@
 import React from 'react'
-import scroogevaultShowcase from '../../images/scroogevault-showcase-opt.webp'
+import scroogevaultShowcase from '../../images/scroogevault-showcase.webp'
+import scroogevaultShowcaseJpg from '../../images/scroogevault-showcase.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import './section-showcase.css'
@@ -10,8 +11,10 @@ function SectionShowcase() {
       <h2>Showcase project</h2>
       <div className="project">
         <a className="project-image" href="https://www.scroogevault.co/" target="_blank" rel="noopener noreferrer">
-          <img src={scroogevaultShowcase} alt="ScroogeVault" />
-          {/* <img src="http://scroogevault.co/static/c05a002351f60a9ad6203c9f6c62b695.png" alt="ScroogeVault" /> */}
+          <picture>
+            <source srcSet={scroogevaultShowcase} type="image/webp" alt="ScroogeVault" />
+            <img src={scroogevaultShowcaseJpg} alt="ScroogeVault" />
+          </picture>
         </a>
         <div className="project-description">
           <h3>ScroogeVault</h3>
