@@ -25,7 +25,10 @@ function SectionWork() {
         <div className="project-description">
           <h3>Credit Karma</h3>
           <p>
-            Credit Karma is an $4 billion personal finance startup with over 88 million members. 
+            Credit Karma has over 90 million members and 1 billion in revenue annually. Recently&nbsp;
+            <a href="https://techcrunch.com/2020/02/24/intuit-credit-karma/" target="_blank" rel="noopener noreferrer">
+              acquired by Intuit for 7.1b
+            </a>.
             It offers free credit score reports, credit cards, personal loans shopping, tax filing and other financial products.
           </p>
           <div>

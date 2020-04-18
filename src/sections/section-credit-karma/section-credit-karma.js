@@ -12,8 +12,12 @@ function SectionCreditKarma() {
         <span>CircleCI</span>
       </div>
       <p>
-        Credit Karma is an American multinational 
-        <b>personal finance company with over 88 million members, with valuation over 4 billion</b>. 
+        Credit Karma is a California based multinational&nbsp; 
+        <b>personal finance company with over 90 million members, 1 billion in revenue annually and with recent&nbsp;
+          <a href="https://techcrunch.com/2020/02/24/intuit-credit-karma/" target="_blank" rel="noopener noreferrer">
+            acquisition by Intuit for 7.1b
+          </a>
+        </b>. 
         It offers free credit score reports, credit cards, personal loans shopping, tax filing and other financial products.
       </p>
       <p className="prominent">
