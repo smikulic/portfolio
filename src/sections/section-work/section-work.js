@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-regular-svg-icons'
 import creditKarmaProjectImg from '../../images/credit-karma-project.webp'
 import creditKarmaProjectImgJpg from '../../images/credit-karma-project.jpg'
+import gleanProjectImg from '../../images/glean-project.webp'
+import gleanProjectImgJpg from '../../images/glean-project.jpg'
 import solarisbankProjectImg from '../../images/solarisbank-project.webp'
 import solarisbankProjectImgJpg from '../../images/solarisbank-project.jpg'
 import movieoProjectImg from '../../images/movieo-project.webp'
@@ -36,6 +38,32 @@ function SectionWork() {
               <button className="primary">Case study</button>
             </Link>
             <a href="https://www.creditkarma.com/" target="_blank" rel="noopener noreferrer">
+              <button className="secondary"><FontAwesomeIcon icon={faEye} /> Visit website</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <hr/>
+
+      <div className="project">
+        <a className="project-image" href="https://www.gleancompany.com/" target="_blank" rel="noopener noreferrer">
+          <picture>
+            <source srcSet={gleanProjectImg} type="image/webp" alt="Glean" />
+            <img src={gleanProjectImgJpg} alt="Glean" />
+          </picture>
+        </a>
+        <div className="project-description">
+          <h3>Glean</h3>
+          <p>
+            Glean is Smart AP that gives finance teams visibility, clarity, and confidence with their vendor spend.
+            You can automate accounting workflows and identify savings opportunities at the line-item level as well as get the big picture on your company’s spend.
+          </p>
+          <div>
+            <Link to="/glean-case-study">
+              <button className="primary">Case study</button>
+            </Link>
+            <a href="https://www.gleancompany.com/" target="_blank" rel="noopener noreferrer">
               <button className="secondary"><FontAwesomeIcon icon={faEye} /> Visit website</button>
             </a>
           </div>
