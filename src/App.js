@@ -14,6 +14,7 @@ import SectionContact from './sections/section-contact/section-contact'
 import SectionWork from './sections/section-work/section-work'
 import SectionAbout from './sections/section-about/section-about'
 import SectionCreditKarma from './sections/section-credit-karma/section-credit-karma'
+import SectionGlean from './sections/section-glean/section-glean'
 import SectionSolarisbank from './sections/section-solarisbank/section-solarisbank'
 import SectionMovieo from './sections/section-movieo/section-movieo'
 import './App.css'
@@ -40,6 +41,9 @@ function App() {
           </Route>
           <Route path="/credit-karma-case-study">
             <SectionCreditKarma />
+          </Route>
+          <Route path="/glean-case-study">
+            <SectionGlean />
           </Route>
           <Route path="/solarisbank-case-study">
             <SectionSolarisbank />
