@@ -47,6 +47,7 @@ function SectionGlean() {
       <p>
         Payment processing
         <br />- enabled our <b>revenue stream</b> and Plaid integration
+        <br />- added <b>International payments</b> functionality
         <div className="section-img-two-column">
           <div className="section-img">
             <picture className="section-img-center">
@@ -121,11 +122,20 @@ function SectionGlean() {
         This effort eventually brough us to:
         <ul>
           <li>
-            <b>Series A funding</b>
+            <b>
+              Series A funding - {" "}
+              <a
+                href="https://techcrunch.com/2022/03/08/ex-better-com-cfo-raises-10-8m-to-build-glean-ai-or-accounts-payable-with-a-brain/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                TechCrunch article
+              </a>
+            </b>
           </li>
           <li>
             <b>first revenue stream</b> through introduction of Payment
-            processing feature
+            processing feature and extended International payments
           </li>
           <li>
             <b>client base growth</b>
