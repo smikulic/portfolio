@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.2c18cbaa.chunk.css",
-    "main.js": "/static/js/main.178bc2c3.chunk.js",
-    "main.js.map": "/static/js/main.178bc2c3.chunk.js.map",
+    "main.js": "/static/js/main.940386ae.chunk.js",
+    "main.js.map": "/static/js/main.940386ae.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c2b20a0b.js",
     "runtime-main.js.map": "/static/js/runtime-main.c2b20a0b.js.map",
-    "static/js/2.09a386fe.chunk.js": "/static/js/2.09a386fe.chunk.js",
-    "static/js/2.09a386fe.chunk.js.map": "/static/js/2.09a386fe.chunk.js.map",
+    "static/js/2.05750255.chunk.js": "/static/js/2.05750255.chunk.js",
+    "static/js/2.05750255.chunk.js.map": "/static/js/2.05750255.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.8a6f63f04bc2c717890c7f9ec03585d8.js": "/precache-manifest.8a6f63f04bc2c717890c7f9ec03585d8.js",
+    "precache-manifest.0e948c93b56c8924f86eb2718fb5d8f9.js": "/precache-manifest.0e948c93b56c8924f86eb2718fb5d8f9.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.2c18cbaa.chunk.css.map": "/static/css/main.2c18cbaa.chunk.css.map",
-    "static/js/2.09a386fe.chunk.js.LICENSE.txt": "/static/js/2.09a386fe.chunk.js.LICENSE.txt",
+    "static/js/2.05750255.chunk.js.LICENSE.txt": "/static/js/2.05750255.chunk.js.LICENSE.txt",
     "static/media/credit-karma-project.webp": "/static/media/credit-karma-project.955965d8.webp",
     "static/media/credit-karma-project.jpg": "/static/media/credit-karma-project.bc0a3753.jpg",
     "static/media/glean-compare.webp": "/static/media/glean-compare.88fd2e9a.webp",
@@ -24,6 +24,7 @@
     "static/media/glean-payment-2.jpg": "/static/media/glean-payment-2.b9e45ef9.jpg",
     "static/media/glean-project.jpg": "/static/media/glean-project.86ddc3bd.jpg",
     "static/media/glean-project.webp": "/static/media/glean-project.cf274380.webp",
+    "static/media/howard.webp": "/static/media/howard.1c7717cf.webp",
     "static/media/ingmar.jpg": "/static/media/ingmar.0c4e52ae.jpg",
     "static/media/ingmar.webp": "/static/media/ingmar.cc32a66e.webp",
     "static/media/ivor.webp": "/static/media/ivor.03ca245b.webp",
@@ -40,8 +41,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c2b20a0b.js",
-    "static/js/2.09a386fe.chunk.js",
+    "static/js/2.05750255.chunk.js",
     "static/css/main.2c18cbaa.chunk.css",
-    "static/js/main.178bc2c3.chunk.js"
+    "static/js/main.940386ae.chunk.js"
   ]
 }
