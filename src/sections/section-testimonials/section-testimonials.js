@@ -1,6 +1,8 @@
 import React from 'react'
 import ingmarImg from '../../images/ingmar.webp'
 import ingmarImgJpg from '../../images/ingmar.jpg'
+import howardImg from '../../images/howard.webp'
+import howardImgJpg from '../../images/howard.jpg'
 import ivorImg from '../../images/ivor.webp'
 import ivorImgJpg from '../../images/ivor.jpg'
 import './section-testimonials.css'
@@ -8,6 +10,21 @@ import './section-testimonials.css'
 function SectionTestimonials() {
   return (
     <div id="testimonials" className="section section-testimonials">
+      <div className="testimonial">
+        <p>
+          “Siniša is an exceptional software engineer and consultant who was a pleasure to work with. <b>His reliability and easygoing demeanor made him a valuable addition to our team, and his expertise helped us make significant strides in our business.</b>
+          <br /><br />
+          His contributions have left a lasting impact on our product and processes, and I would gladly work with him again.”
+        </p>
+        <div className="person">
+          <picture>
+            <source srcSet={howardImg} className="profile-picture" type="image/webp" alt="Howard Katzenberg" />
+            <img src={howardImgJpg} className="profile-picture" alt="Howard Katzenberg" />
+          </picture>
+          <div className="name">Howard Katzenberg, <br />Founder of Glean AI</div>
+        </div>
+      </div>
+      <hr/>
       <div className="testimonial">
         <p>
           “Siniša possesses extensive specialist knowledge, which he always deployed confidently and skillfully in practice. 
