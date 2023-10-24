@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c285279c44aacdea3a6fbb7ef48bcdd4",
+    "revision": "e8c9029b3324cd0b5f53ba3a73c64fcf",
     "url": "/index.html"
   },
   {
-    "revision": "7dc16691ef31a7e3835e",
+    "revision": "26e68f1de68e23cdc89e",
     "url": "/static/css/main.2c18cbaa.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.05750255.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7dc16691ef31a7e3835e",
-    "url": "/static/js/main.940386ae.chunk.js"
+    "revision": "26e68f1de68e23cdc89e",
+    "url": "/static/js/main.871dc7fd.chunk.js"
   },
   {
     "revision": "0d46f7656c748826843c",
@@ -92,6 +92,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/ivor.37392f3a.jpg"
   },
   {
+    "revision": "561a2025f82d1182f87fff2acf98bf11",
+    "url": "/static/media/monthly-showcase.561a2025.webp"
+  },
+  {
+    "revision": "65932a8fc2b09cfbb0573255221ac547",
+    "url": "/static/media/monthly-showcase.65932a8f.jpg"
+  },
+  {
     "revision": "1ecee744830294baf55eb5d1254e0ba1",
     "url": "/static/media/movieo-project.1ecee744.jpg"
   },
@@ -100,20 +108,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/movieo-project.1f656ade.webp"
   },
   {
-    "revision": "0928072e999e1b941ce7b8ceddae33aa",
-    "url": "/static/media/profile.0928072e.jpg"
+    "revision": "3a4dd8abd244a14ae61d8986d27ef83a",
+    "url": "/static/media/profile_smile.3a4dd8ab.webp"
   },
   {
-    "revision": "80525bf7474f817a6b94f8a54f4035e2",
-    "url": "/static/media/profile.80525bf7.webp"
-  },
-  {
-    "revision": "5399eb90383b6cb1e635799cd33ce199",
-    "url": "/static/media/scroogevault-showcase.5399eb90.webp"
-  },
-  {
-    "revision": "7dddb94fb4513dfd73a8545743ce6451",
-    "url": "/static/media/scroogevault-showcase.7dddb94f.jpg"
+    "revision": "4a15bb61f1299254b5b1691b47714d21",
+    "url": "/static/media/profile_smile.4a15bb61.jpg"
   },
   {
     "revision": "0005d8866ba6fce0c8bc126acef98d14",
