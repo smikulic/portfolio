@@ -36,8 +36,8 @@ function SectionShowcase() {
             <br />
             <br />
             Client side has scalable React/Apollo architecture with MUI library
-            and Webpack infrastructure. GraphQL API is built with Node.js and
-            Prisma ORM. Production deploy is done on "merge to master", where Digital Ocean picks it up :)
+            and Webpack. GraphQL API is built with Node.js and
+            Prisma ORM.
           </p>
           <div>
             <a
