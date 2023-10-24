@@ -1,6 +1,6 @@
 import React from 'react'
-import profileImg from '../../images/profile.webp'
-import profileImgJpg from '../../images/profile.jpg'
+import profileImg from '../../images/profile_smile.webp'
+import profileImgJpg from '../../images/profile_smile.jpg'
 import SocialLinks from '../../components/social-links/social-links'
 import './section-intro.css'
 
