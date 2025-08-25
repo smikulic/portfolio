@@ -1,0 +1,18 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navigation from "../components/navigation/navigation";
+import Footer from "../components/footer/footer";
+import SectionMovieo from "../sections/section-movieo/section-movieo.jsx";
+
+const pageTitle = "Movieo — Case Study | Sinisa Mikulic";
+const pageDescription =
+  "A short case study of my work with Movieo: frontend impact, challenges, and outcomes.";
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <main class="container">
+    <Navigation />
+    <SectionMovieo />
+    <Footer />
+  </main>
+</BaseLayout>

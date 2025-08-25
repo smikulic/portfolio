@@ -1,0 +1,80 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Navigation from "../components/navigation/navigation";
+
+const { frontmatter = {} } = Astro.props;
+const {
+  title = "Untitled",
+  description = "",
+  date,
+  tags = [],
+  hero,
+} = frontmatter;
+
+const pageTitle = `${title} | Sinisa Mikulic`;
+const pageDescription = description;
+
+const fmt = (d: any) =>
+  new Date(d).toLocaleDateString("en-GB", {
+    year: "numeric",
+    month: "short",
+    day: "2-digit",
+  });
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} ogImage={hero} isArticle={true}>
+  {/* Inject article-specific tags into BaseLayout's <slot name="head" /> */}
+  <Fragment slot="head">
+    <meta
+      property="article:published_time"
+      content={date ? date : ""}
+    />
+    <script type="application/ld+json" is:inline>
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        headline: title,
+        description: pageDescription,
+        datePublished: date ? date.toISOString() : undefined,
+        mainEntityOfPage: pageUrl,
+      })}
+    </script>
+  </Fragment>
+
+  <main class="container">
+    <Navigation />
+    <article>
+      <header style="margin-bottom:1.25rem;">
+        <h1 style="margin:.25rem 0 0 0;">{title}</h1>
+        <small style="color:#666;">{fmt(date)}</small>
+        {
+          hero && (
+            <div style="margin-top:1rem;">
+              <img
+                src={hero}
+                alt={title}
+                style="width:100%;height:auto;border-radius:.5rem;"
+              />
+            </div>
+          )
+        }
+      </header>
+
+      <slot />
+
+      {
+        Array.isArray(tags) && tags.length > 0 && (
+          <p style="margin-top:1.5rem;">
+            {tags.map((t) => (
+              <span style="display:inline-block;font-size:.8rem;background:#f3f4f6;padding:.15rem .5rem;border-radius:.5rem;margin-right:.35rem;">
+                {t}
+              </span>
+            ))}
+          </p>
+        )
+      }
+    </article>
+
+    <p style="margin-top:2rem;"><a href="/blog">← Back to Writing</a></p>
+  </main>
+</BaseLayout>

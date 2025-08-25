@@ -1,0 +1,18 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navigation from "../components/navigation/navigation";
+import Footer from "../components/footer/footer";
+import SectionSolarisbank from "../sections/section-solarisbank/section-solarisbank.jsx";
+
+const pageTitle = "SolarisBank — Case Study | Sinisa Mikulic";
+const pageDescription =
+  "A short case study of my work with SolarisBank: frontend impact, challenges, and outcomes.";
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <main class="container">
+    <Navigation />
+    <SectionSolarisbank />
+    <Footer />
+  </main>
+</BaseLayout>

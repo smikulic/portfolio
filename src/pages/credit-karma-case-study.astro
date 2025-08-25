@@ -1,0 +1,18 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navigation from "../components/navigation/navigation";
+import Footer from "../components/footer/footer";
+import SectionCreditKarma from "../sections/section-credit-karma/section-credit-karma.jsx";
+
+const pageTitle = "Credit Karma — Case Study | Sinisa Mikulic";
+const pageDescription =
+  "A short case study of my work with Credit Karma: frontend impact, challenges, and outcomes.";
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <main class="container">
+    <Navigation />
+    <SectionCreditKarma />
+    <Footer />
+  </main>
+</BaseLayout>
