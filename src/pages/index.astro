@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navigation from "../components/navigation/navigation";
+import Footer from "../components/footer/footer";
+import SectionIntro from "../sections/section-intro/section-intro";
+import SectionTestimonials from "../sections/section-testimonials/section-testimonials";
+import SectionWork from "../sections/section-work/section-work";
+import SectionShowcase from "../sections/section-showcase/section-showcase";
+import SectionHowIWork from "../sections/section-how-i-work/section-how-i-work";
+import SectionContact from "../sections/section-contact/section-contact";
+
+const pageTitle = "Sinisa Mikulic - Web development expert";
+const pageDescription =
+  "Sinisa Mikulic is a proven web applications developer with over 10 years of experience. He helps early stage startups and established companies deliver their products so they can gain interest from investors, bring value to their users and meet their business goals.";
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <main class="container">
+    <Navigation />
+
+    <SectionIntro />
+    <SectionTestimonials />
+    <SectionWork />
+    <SectionShowcase />
+    <SectionHowIWork />
+    <SectionContact />
+    <Footer />
+  </main>
+</BaseLayout>

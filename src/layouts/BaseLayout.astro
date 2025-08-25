@@ -1,0 +1,96 @@
+---
+/**
+ * BaseLayout.astro
+ * Shared layout with SEO, fonts, favicon, and Google Analytics.
+ * Copy your global CSS here if you have one:
+ */
+
+ import '../styles/global.css'
+
+interface Props {
+  title?: string
+  description?: string
+  ogImage?: string
+  isArticle?: boolean
+  noIndex?: boolean
+}
+const {
+  title = 'Sinisa Mikulic - Web development expert',
+  description = 'Sinisa Mikulic is a proven web applications developer with over 10 years of experience. He helps early stage startups and established companies deliver their products so they can gain interest from investors, bring value to their users and meet their business goals.',
+  ogImage,
+  noIndex = false
+} = Astro.props
+
+const url = Astro.url?.toString() ?? ''
+const robots = noIndex ? 'noindex, nofollow' : 'index, follow'
+const isArticle = false // keep `false` here; set `true` in BlogPost layout for posts
+const base = import.meta.env.BASE_URL || '/' // '/repo-name/' on project pages
+
+// Resolve OG image relative to current page URL if a relative path is passed
+const imageUrl = ogImage ? new URL(ogImage, url).toString() : undefined
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content={robots} />
+
+    <!-- Favicon / icons (BASE_URL-safe for GitHub Pages project sites) -->
+    <link rel="icon" href={`${base}favicon.ico`} />
+    <link rel="apple-touch-icon" href={`${base}favicon.ico`} />
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet" />
+
+    <!-- Canonical + Social -->
+    <link rel="canonical" href={url} />
+    <meta property="og:type" content={isArticle ? 'article' : 'website'} />
+    <meta property="og:site_name" content="Sinisa Mikulic" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={url} />
+    {imageUrl && <meta property="og:image" content={imageUrl} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {imageUrl && <meta name="twitter:image" content={imageUrl} />}
+
+    <!-- Basic Website JSON-LD -->
+    <script type="application/ld+json" is:inline>
+      {JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Person',
+        name: 'Sinisa Mikulic',
+        url,
+        "sameAs": [
+        "https://github.com/smikulic",
+        "https://www.linkedin.com/in/sinisamikulic/"
+      ],
+      "jobTitle": "Frontend Engineer",
+      })}
+    </script>
+
+    <!-- Google Analytics (gtag) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R6MY02VN9M"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-R6MY02VN9M');
+    </script>
+
+    <!-- Page-specific additions can be injected via this slot -->
+    <slot name="head" />
+  </head>
+  <body>
+    <div class="App">
+      <slot />
+    </div>
+  </body>
+</html>

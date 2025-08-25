@@ -1,0 +1,18 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navigation from "../components/navigation/navigation";
+import Footer from "../components/footer/footer";
+import SectionGlean from "../sections/section-glean/section-glean.jsx";
+
+const pageTitle = "Glean — Case Study | Sinisa Mikulic";
+const pageDescription =
+  "A short case study of my work with Glean: frontend impact, challenges, and outcomes.";
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <main class="container">
+    <Navigation />
+    <SectionGlean />
+    <Footer />
+  </main>
+</BaseLayout>
