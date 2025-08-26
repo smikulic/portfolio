@@ -43,10 +43,21 @@ const fmt = (d: any) =>
 
   <main class="container">
     <Navigation />
+
+    <div class="section section-page">
+      <h1>{title}</h1>
+      <small style="margin-bottom:1rem;color:#666;">{fmt(date)}</small>
+      {
+        Array.isArray(tags) && tags.length > 0 && (
+          <div class="tech">
+            {tags.map((tag) => (
+              <span>{tag}</span>
+            ))}
+          </div>
+        )
+      }
     <article>
-      <header style="margin-bottom:1.25rem;">
-        <h1 style="margin:.25rem 0 0 0;">{title}</h1>
-        <small style="color:#666;">{fmt(date)}</small>
+      <header style="margin-bottom:2.5rem;">
         {
           hero && (
             <div style="margin-top:1rem;">
@@ -61,20 +72,9 @@ const fmt = (d: any) =>
       </header>
 
       <slot />
-
-      {
-        Array.isArray(tags) && tags.length > 0 && (
-          <p style="margin-top:1.5rem;">
-            {tags.map((t) => (
-              <span style="display:inline-block;font-size:.8rem;background:#f3f4f6;padding:.15rem .5rem;border-radius:.5rem;margin-right:.35rem;">
-                {t}
-              </span>
-            ))}
-          </p>
-        )
-      }
+      
+      <p style="margin-top:1rem;"><a href="/blog">← Back to Writing</a></p>
     </article>
-
-    <p style="margin-top:2rem;"><a href="/blog">← Back to Writing</a></p>
+    </div>
   </main>
 </BaseLayout>

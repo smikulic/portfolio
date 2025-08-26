@@ -30,6 +30,8 @@ const href = (u: any) => `${base}${String(u).replace(/^\//, '')}`
 <BaseLayout title={title} description={description}>
   <main class="container">
     <Navigation />
+
+    <div class="section section-intro">
     <h1>Writing</h1>
 
     {posts.length === 0 ? (
@@ -39,7 +41,7 @@ const href = (u: any) => `${base}${String(u).replace(/^\//, '')}`
         {posts.map((p) => (
           <li style="margin:1.25rem 0;border-bottom:1px solid #eee;padding-bottom:1rem;">
             <h2 style="margin:0 0 .25rem 0;font-size:1.25rem;">
-              <a href={href(p.url)}>{p.title}</a>
+              <a href={href(p.url)} style="color: salmon">{p.title}</a>
             </h2>
             <small style="color:#666;">{fmt(p.date)}</small>
             <p style="margin:.5rem 0 0 0;">{p.description}</p>
@@ -57,5 +59,6 @@ const href = (u: any) => `${base}${String(u).replace(/^\//, '')}`
         url: new URL('/blog/', Astro.url).toString()
       })}
     </script>
+    </div>
   </main>
 </BaseLayout>

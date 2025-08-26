@@ -10,9 +10,9 @@ function Navigation() {
         <a href="/#work" className="item">
           Work
         </a>
-        {/* <a href="/blog" className="item">
+        <a href="/blog" className="item">
           Writing
-        </a> */}
+        </a>
         <a href="/about" className="item">
           About
         </a>
