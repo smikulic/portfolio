@@ -63,14 +63,14 @@ const imageUrl = ogImage ? new URL(ogImage, url).toString() : undefined
     {imageUrl && <meta name="twitter:image" content={imageUrl} />}
 
     <!-- Basic Website JSON-LD -->
-    <script type="application/ld+json" is:inline>
-    {JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Sinisa Mikulic",
-      "url": url,
-    })}
-  </script>
+    <!-- <script type="application/ld+json" is:inline>
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Sinisa Mikulic",
+        "url": url,
+      })}
+    </script> -->
 
 <!-- Google Analytics (gtag) -->
   {!isDev && (

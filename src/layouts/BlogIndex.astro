@@ -51,14 +51,14 @@ const href = (u: any) => `${base}${String(u).replace(/^\//, '')}`
     )}
 
     <!-- JSON-LD -->
-    <script type="application/ld+json" is:inline>
+    <!-- <script type="application/ld+json" is:inline>
       {JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'Blog',
-        name: 'Sinisa Mikulic — Writing',
-        url: new URL('/blog/', Astro.url).toString()
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Sinisa Mikulic — Writing",
+        "url": new URL('/blog/', Astro.url).toString()
       })}
-    </script>
+    </script> -->
     </div>
   </main>
 </BaseLayout>

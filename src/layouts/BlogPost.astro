@@ -29,15 +29,15 @@ const fmt = (d: any) =>
       property="article:published_time"
       content={date ? date : ""}
     />
-    <script type="application/ld+json" is:inline>
+    <!-- <script type="application/ld+json" is:inline>
       {JSON.stringify({
         "@context":"https://schema.org",
         "@type":"BlogPosting",
-        headline: title,
-        description: pageDescription,
-        datePublished: date ? date.toISOString() : undefined,
-        mainEntityOfPage: Astro.url.toString()
-      })}
+        "headline": title,
+        "description": pageDescription,
+        "datePublished": date ? date.toISOString() : undefined,
+        "mainEntityOfPage": Astro.url.toString()
+      })} -->
     </script>
   </Fragment>
 
