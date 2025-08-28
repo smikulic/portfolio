@@ -31,12 +31,12 @@ const fmt = (d: any) =>
     />
     <script type="application/ld+json" is:inline>
       {JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
+        "@context":"https://schema.org",
+        "@type":"BlogPosting",
         headline: title,
         description: pageDescription,
         datePublished: date ? date.toISOString() : undefined,
-        mainEntityOfPage: pageUrl,
+        mainEntityOfPage: Astro.url.toString()
       })}
     </script>
   </Fragment>

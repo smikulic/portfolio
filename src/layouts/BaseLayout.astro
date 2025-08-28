@@ -25,6 +25,7 @@ const url = Astro.url?.toString() ?? ''
 const robots = noIndex ? 'noindex, nofollow' : 'index, follow'
 const isArticle = false // keep `false` here; set `true` in BlogPost layout for posts
 const base = import.meta.env.BASE_URL || '/' // '/repo-name/' on project pages
+const isDev = import.meta.env.IS_DEV
 
 // Resolve OG image relative to current page URL if a relative path is passed
 const imageUrl = ogImage ? new URL(ogImage, url).toString() : undefined
@@ -63,20 +64,17 @@ const imageUrl = ogImage ? new URL(ogImage, url).toString() : undefined
 
     <!-- Basic Website JSON-LD -->
     <script type="application/ld+json" is:inline>
-      {JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'Person',
-        name: 'Sinisa Mikulic',
-        url,
-        "sameAs": [
-        "https://github.com/smikulic",
-        "https://www.linkedin.com/in/sinisamikulic/"
-      ],
-      "jobTitle": "Frontend Engineer",
-      })}
-    </script>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Sinisa Mikulic",
+      "url": url,
+    })}
+  </script>
 
-    <!-- Google Analytics (gtag) -->
+<!-- Google Analytics (gtag) -->
+  {!isDev && (
+    <>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R6MY02VN9M"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
@@ -84,6 +82,8 @@ const imageUrl = ogImage ? new URL(ogImage, url).toString() : undefined
       gtag('js', new Date());
       gtag('config', 'G-R6MY02VN9M');
     </script>
+    </>
+  )}
 
     <!-- Page-specific additions can be injected via this slot -->
     <slot name="head" />
