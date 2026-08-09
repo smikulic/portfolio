@@ -31,16 +31,18 @@ function SectionShowcase() {
         </a>
         <div className="project-description">
           <h3>Monthly App</h3>
-          <p className="quick-description">Budget and savings tracking app</p>
+          <p className="quick-description">
+            Personal finance and budgeting, live at yourmonthly.app
+          </p>
           <p>
-            I wanted to create a budget tracker for myself, friends and family.
-            This also serves as a playground to demonstrate my skill in building
-            a real-world CRUD app where product and infrastructure is setup from
-            ground up.
+            A live product I designed, built and maintain alone: real users,
+            analytics driving what gets built next, and a security audit I run
+            against my own authorization logic.
             <br />
             <br />
-            Client side has scalable React/Apollo architecture with MUI library
-            and Webpack. GraphQL API is built with Node.js and Prisma ORM.
+            React, TypeScript and Apollo on the client. GraphQL API on Node.js
+            with Prisma and Postgres. Source is public, including the decision
+            records and the audit log.
           </p>
           <div>
             <a

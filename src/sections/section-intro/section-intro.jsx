@@ -20,12 +20,14 @@ function SectionIntro() {
         </div>
         <div className="profile-content">
           <h1 className="headline">
-            I'm a proven web development expert specialized in frontend.
+            Product engineer. 14 years shipping in regulated banking, payments
+            and consumer finance.
           </h1>
           <h3 className="subheadline">
-            Whether you're an early stage startup or an established company - I
-            will provide you with technical and business expertise you need to
-            succeed.
+            I build the features that make money move: international payments at
+            Glean, marketplace search at Credit Karma, core product at
+            solarisBank in Berlin. Usually the first or lead engineer, working
+            directly with founders.
           </h3>
         </div>
       </div>
