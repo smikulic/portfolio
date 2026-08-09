@@ -20,8 +20,8 @@ function SectionIntro() {
         </div>
         <div className="profile-content">
           <h1 className="headline">
-            Product engineer. 14 years shipping in regulated banking, payments
-            and consumer finance.
+            Product engineer. 14 years shipping in regulated banking, payments,
+            wealth management and consumer finance.
           </h1>
           <h3 className="subheadline">
             I build the features that make money move: international payments at
