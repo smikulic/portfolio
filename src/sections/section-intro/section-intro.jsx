@@ -20,13 +20,15 @@ function SectionIntro() {
         </div>
         <div className="profile-content">
           <h1 className="headline">
-            Product engineer. Building the features that move money since 2012.
+            Senior product engineer. Building web and mobile products end to end
+            since 2012.
           </h1>
           <h3 className="subheadline">
-            Fintech: regulated banking, payments, wealth management and consumer
-            finance. International payments at Glean, marketplace search at
-            Credit Karma, core product at solarisBank in Berlin. Usually the
-            first or lead engineer, working directly with founders.
+            Most of my depth is in fintech, the features that move money:
+            regulated banking, payments, wealth management and consumer finance.
+            International payments at Glean, marketplace search at Credit Karma,
+            core product at solarisBank in Berlin. Usually the first or lead
+            engineer, working directly with founders.
           </h3>
         </div>
       </div>
